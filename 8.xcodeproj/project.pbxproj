@@ -66,7 +66,6 @@
 				954AD1902789CC4900AA7C02 /* View */,
 				954AD1732789959900AA7C02 /* AppDelegate.swift */,
 				954AD1752789959900AA7C02 /* SceneDelegate.swift */,
-				954AD1912789CC6000AA7C02 /* Model */,
 				954AD17C2789959A00AA7C02 /* Assets.xcassets */,
 				954AD17E2789959A00AA7C02 /* LaunchScreen.storyboard */,
 				954AD1812789959A00AA7C02 /* Info.plist */,
@@ -82,13 +81,6 @@
 				954AD1792789959900AA7C02 /* Main.storyboard */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		954AD1912789CC6000AA7C02 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		954AD1922789CC8C00AA7C02 /* Controllers */ = {

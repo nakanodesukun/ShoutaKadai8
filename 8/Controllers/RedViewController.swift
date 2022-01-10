@@ -12,10 +12,6 @@ class RedViewController: UIViewController {
     @IBOutlet private weak var resultLabel: UILabel!
     @IBOutlet private weak var slider: UISlider!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
 
 
     @IBAction private func changeSlider(_ sender: Any) {

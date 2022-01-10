@@ -12,9 +12,6 @@ class GreenViewController: UIViewController {
     @IBOutlet private weak var resultLabel: UILabel!
     @IBOutlet private weak var slider: UISlider!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
     @IBAction func changeSlider(_ sender: Any) {
         delegate.count = slider.value
         resultLabel.text = String(delegate.count)
