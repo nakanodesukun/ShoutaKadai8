@@ -8,11 +8,11 @@
 import UIKit
 
 class GreenViewController: UIViewController {
-    let delegate = UIApplication.shared.delegate as! AppDelegate
+   private let delegate = UIApplication.shared.delegate as! AppDelegate
     @IBOutlet private weak var resultLabel: UILabel!
     @IBOutlet private weak var slider: UISlider!
 
-    @IBAction func changeSlider(_ sender: Any) {
+    @IBAction private func changeSlider(_ sender: Any) {
         delegate.count = slider.value
         resultLabel.text = String(delegate.count)
     }

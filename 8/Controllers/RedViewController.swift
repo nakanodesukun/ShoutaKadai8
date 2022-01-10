@@ -8,7 +8,7 @@
 import UIKit
 
 class RedViewController: UIViewController {
-    let delegate = UIApplication.shared.delegate as! AppDelegate
+   private let delegate = UIApplication.shared.delegate as! AppDelegate
     @IBOutlet private weak var resultLabel: UILabel!
     @IBOutlet private weak var slider: UISlider!
 
@@ -20,7 +20,7 @@ class RedViewController: UIViewController {
 
     }
 
-    override func viewWillAppear(_ animated: Bool) {
+    override  func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         slider.value = delegate.count
          self.resultLabel.text = String(delegate.count)
