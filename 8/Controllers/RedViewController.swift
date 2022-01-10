@@ -8,21 +8,18 @@
 import UIKit
 
 class RedViewController: UIViewController {
-   private let delegate = UIApplication.shared.delegate as! AppDelegate
+   private let delegate = UIApplication.shared.delegate as? AppDelegate
     @IBOutlet private weak var resultLabel: UILabel!
     @IBOutlet private weak var slider: UISlider!
 
-
-
     @IBAction private func changeSlider(_ sender: Any) {
-        delegate.count = slider.value
-        resultLabel.text = String(delegate.count)
-
+        delegate?.count = slider.value
+        resultLabel.text = String(delegate?.count ?? 0.0)
     }
 
     override  func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        slider.value = delegate.count
-         self.resultLabel.text = String(delegate.count)
+        slider.value = delegate?.count ?? 0.0
+        self.resultLabel.text = String(delegate?.count ?? 0.0)
     }
 }
